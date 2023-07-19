@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* the star means universal selector. we are giving all elements to have a padding 
+and margin of zero*/
+
+/* wrapper usually contains one element and groups together for more functionality and interface.*/
+/*container constains more than one element*/
+.wrapper{
+    background: url(glass.jpg) no-repeat; 
+    background-size: cover;
+    height: 100vh;
+}
+
+.wrapper1{
+    background: url(purpleflow.jpg) no-repeat; 
+    background-size: cover;
+    height: 100vh;
+
+    
+}
+
+.about img{
+    height: auto;
+    width: 420px;
+    border: 2px solid pink;
+
+}
+
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 110px; 
+
+}
+
+.about-text h1{
+    color: pink;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px; 
+    text-shadow: 0 0 32px white;
+
+}
+
+.about-text h5{
+    color:pink;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing :2px;
+
+}
+
+.about-text p{
+    color: pink;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 21px;
+    margin-bottom: 45px;
+}
+
+span {
+    color:rgb(165, 167, 255);
+}
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: rgba(0,5,500,0.4);
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-left: 7px;
+    margin-top: 8px;
+    border: 2px solid black;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 40px
+
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: pink;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.navbar a:hover {
+    color: #ffb9e4;
+    transition: .4s;
+  }
+ 
+.wrapper .center{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: pink;
+    user-select: none;
+}
+
+.center h1{
+    font-size: 70px;
+    font-weight: Bold;
+    width: 885px;
+    text-align: center;
+    text-shadow: 0 0 32px rgb(0, 0, 0);
+}
+
+.center h2{
+    font-size: 30px;
+    font-weight: Bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 0 0 32px rgb(0, 0, 0);
+
+}
+
+.center .buttons{
+    margin: 35px 280px;
+}
+
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: pink;
+    background: white;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+
+}
+
+.buttons button:hover{
+    color: #9f758f;
+    transition: .4s;
+    background: rgb(207, 190, 255);
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 600px;
+   /* border: 3px solid pink;*/
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-top: 60px;
+    margin-left: 500px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border: 3px solid pink;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: black;
+    color: pink;
+    transform: rotateY(180deg);
+    border: 3px solid pink;
+  }
+
+
+  /* Contact form code */
+
+  form { max-width:420px; margin:50px auto; }
+  
+  .feedback-input {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: lightpink;
+    border:2px solid lightpink;
+    transition: all 0.1s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid white; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+
+ 
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:lightpink;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:rgb(165, 167, 255); }
